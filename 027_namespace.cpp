@@ -1,3 +1,4 @@
+// C++ program to understand namespace ambiguous
 #include <iostream>
 
 using namespace std;
