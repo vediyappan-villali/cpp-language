@@ -8,14 +8,26 @@ class A
 {
     public:
         int num1;
+
+        A()
+        {
+            num1 = 10;
+        }
+
+        void getData()
+        {
+            cout << num1 << endl;
+        }
 };
 
+// class B : virtual public A
 class B : public A
 {
     public:
         int num2;
 };
 
+// class C : virtual public A
 class C : public A
 {
     public:
@@ -32,9 +44,13 @@ int main(void)
 {
     D d1;
 
+    d1.getData();
+
     d1.num3 = 300;
     d1.num2 = 200;
     d1.num1 = 100;
+
+    d1.getData();
 
     return 0;
 }
